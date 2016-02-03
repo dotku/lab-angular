@@ -1,0 +1,14 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="repeatApp" ng-controller="repeatCtrl">
+    <div ng-repeat="x in list">
+        {{ x }}
+    </div>
+    <script>
+        var repeatApp = angular.module("repeatApp", []);
+        repeatApp.controller("repeatCtrl", function($scope){
+            list = [1,2,3,4,5];
+        });
+    </script>
+</body>
